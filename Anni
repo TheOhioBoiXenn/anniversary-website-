@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Monthsary Countdown</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            background: linear-gradient(to right, #f8c8d7, #ffb6c1); /* Soft pink gradient background */
+            color: #333;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            flex-direction: column;
+        }
+
+        .message {
+            font-size: 2em;
+            color: #e63946; /* Red color for the message */
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        .countdown {
+            font-size: 3em;
+            font-weight: bold;
+            color: #2a9d8f; /* Teal color for the countdown */
+        }
+
+        .container {
+            background: #fff;
+            padding: 40px;
+            border-radius: 15px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <div class="message">Happy Monthsary, My Love!</div>
+        <div id="countdown" class="countdown"></div>
+    </div>
+
+    <script>
+        // Set the date of the monthsary (change the date here)
+        const monthsaryDate = new Date("2025-02-22T00:00:00").getTime();
+
+        // Update the countdown every second
+        const countdownFunction = setInterval(() => {
+            const now = new Date().getTime();
+            const distance = monthsaryDate - now;
+
+            // Time calculations
+            const days = Math.floor(distance / (1000 * 60 * 60 * 24));
+            const hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+            const minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+            const seconds = Math.floor((distance % (1000 * 60)) / 1000);
+
+            // Display the countdown
+            document.getElementById("countdown").innerHTML = 
+                `${days}d ${hours}h ${minutes}m ${seconds}s`;
+
+            // If the countdown is over
+            if (distance < 0) {
+                clearInterval(countdownFunction);
+                document.getElementById("countdown").innerHTML = "It's time to celebrate our love!";
+            }
+        }, 1000);
+    </script>
+
+</body>
+</html>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>K & k 😜 ❤</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #f1f1f1;
+            color: #333;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            flex-direction: column;
+        }
+
+        .message {
+            font-size: 2em;
+            color: #e63946;
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        .countdown {
+            font-size: 3em;
+            font-weight: bold;
+            color: #2a9d8f;
+        }
+
+        .container {
+            background: #fff;
+            padding: 40px;
+            border-radius: 15px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <div class="message">Waitt!!✋</div>
+        <div id="countdown" class="countdown"></div>
+    </div>
+
+    <script>
+        // Set the date of the monthsary (change the date here)
+        const monthsaryDate = new Date("2025-01-23T00:00:00").getTime();
+
+        // Update the countdown every second
+        const countdownFunction = setInterval(() => {
+            const now = new Date().getTime();
+            const distance = monthsaryDate - now;
+
+            // Time calculations
+            const days = Math.floor(distance / (1000 * 60 * 60 * 24));
+            const hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+            const minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+            const seconds = Math.floor((distance % (1000 * 60)) / 1000);
+
+            // Display the countdown
+            document.getElementById("countdown").innerHTML = 
+                `${days}d ${hours}h ${minutes}m ${seconds}s`;
+
+            // If the countdown is over
+            if (distance < 0) {
+                clearInterval(countdownFunction);
+                document.getElementById("countdown").innerHTML = "Happy monthsary, my love. Every moment with you feels like a beautiful dream. Thank you for filling my life with so much happiness and love.Being with you is the best part of my life, and I look forward to many more months of love and happiness with you.";
+            }
+        }, 1000);
+    </script>
+    </body>
+</html>
